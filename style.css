@@ -1,0 +1,474 @@
+/* Defualt Setting */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-weight: 400;
+}
+
+body{
+    font-family: sans-serif;
+    background:linear-gradient(to right bottom,#1e1203,#442905,#6f5737);
+}
+
+.container{
+    max-width: 137rem;
+    margin:0 auto;
+
+}
+
+
+/* header Styling  */
+.header-div{
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr;
+    /* position: sticky;
+    top:0px; */
+}
+
+.header-div img{
+    height: 10rem;
+    width: 10.6rem;
+    margin-top:-1rem;
+}
+.header-div ul{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-top: 3.2rem;
+    gap:4rem;
+    list-style: none;
+}
+.header-div ul li a{
+    text-decoration: none;
+    color:white;
+    border-radius: 2rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    transition: all 0.2s;
+}
+.header-div ul li a:hover{
+    border: 2px solid #a9701c;
+    padding:1.1rem;
+}
+.header-div ul li a:active{
+    color:grey;
+}
+
+.header-div button{
+    margin:1.9rem 0px 0px 12rem;
+    padding:1rem 1rem;
+    font-weight: 700;
+    background-color: transparent;
+    color:white;
+    border: 2px solid #a9701c;
+    border-radius: 1.6rem;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.header-div button:hover{
+    background-color: #3a280b;
+}
+
+/* Hero-Section */
+.hero-section{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.hero-info{
+    margin-top:6rem;
+}
+.hero-section h1{
+    font-size: 9rem;
+    color:white;
+}
+.hero-section p{
+    font-size: 2.7rem;
+    color:white;
+    margin-left: 1rem;
+}
+
+.hero-section button{
+    padding:1.2rem 1.2rem;
+    font-weight: 700;
+    background-color: transparent;
+    color:white;
+    border: 2px solid #a9701c;
+    border-radius: 1.6rem;
+    margin:1.4rem 0px 0px 1rem;
+    cursor: pointer;
+}
+.hero-section button:hover{
+    background-color: #3a280b;
+    transition: all 0.5s;
+    /* transform: scale(1.01); */
+}
+
+.hero-section img{
+    height: 41rem;
+    width: 41rem;
+}
+
+/* Lines  */
+.lines{
+    display: flex;
+    justify-content: center;
+    color:white;
+    gap:6px;
+}
+/* primary Heading */
+.primary-heading{
+    color:white;
+    font-size: 3rem;
+    margin-top:2rem;
+    text-align: center;
+}
+/* Cards  */
+.cards{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    margin-top:1.5rem;
+    padding: 1px 2.5rem;
+}
+.card{
+    height: 32rem;
+    width:30rem;
+    border-radius: 5px;
+    border: 2px solid #a9701c;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 5px grey ;
+}
+.card:hover{
+    transform: scale(1.01);
+}
+.card img{
+    width:100%;
+    padding: 6px;
+    border-radius: 1.3rem;
+}
+.card h1{
+    text-align: center;
+    color:white;
+    font-size: 2.5rem;
+    margin-top: 5px;
+}
+.card li{
+    display: flex;
+    justify-content: center;
+}
+.card svg{
+    width: 6rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+/* Price card  */
+.price-card{
+    position: relative;
+    overflow: hidden;
+}
+.price-card::after{
+    content: "BEST OFFER";
+    background-color: yellow;
+    transform: rotate(45deg);
+    font-size: 1.6rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    padding: 4px 5rem;
+    position: absolute;
+    top:27px;
+    right:-60px;
+}
+/* about-div  */
+.about-div{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:3rem;
+}
+.about-div img{
+    height: 41rem;
+    width: 41rem;
+}
+.about-info{
+    height: 35rem;
+    width:60rem;
+    box-shadow: 1px 1px 5px grey ;
+    border-radius: 5px;
+    transition: all 0.3s;
+    padding: 9px 1.1rem;
+    border: 2px solid #a9701c;
+}
+.about-info h1{
+    color:white;
+    font-size:4rem;
+}
+.about-info p{
+    color:white;
+    font-size: 1.5rem;
+}
+.about-info button{
+    padding:1.2rem 1.2rem;
+    font-weight: 700;
+    background-color: transparent;
+    color:white;
+    border: 2px solid #a9701c;
+    border-radius: 1.6rem;
+    margin:1.4rem 0px 0px 1rem;   
+}
+.about-info button:hover{
+    background-color: #3a280b;
+    transition: all 0.5s;
+}
+/* Questions styling  */
+.center-questions{
+    display: flex;
+    justify-content: center;
+}
+.questions-section{
+    margin-top:3rem;
+    
+}
+.question{
+    height:5rem;
+    width: 70rem;
+    border-radius: 5px;
+    border: 2px solid #a9701c;   
+    display: flex;
+    justify-content: space-between;
+}
+.question:not(:first-child){
+    margin-top: 1rem;
+}
+.question h1{
+    font-size:1.6rem;
+    padding: 1.6rem 1rem;
+    color:white;
+}
+.question button{
+    background-color: transparent;
+    border: none;
+    border-left: 2px solid white;
+
+}
+.question svg{
+    width:4rem;
+    color:white;
+}
+/* 3rd-question-div  */
+.question-3rd-div{
+    height:17.3rem;
+    width:70rem;
+    border: 2px solid #a9701c;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.heading-svg{
+    display: flex;
+    justify-content: space-between;
+}
+.heading-svg h1{
+    color:white;
+    font-size:1.6rem;
+    padding: 1rem 1rem;
+}
+.heading-svg button{
+    border:none;
+    background-color: transparent;
+}
+.heading-svg svg{
+    width:3.4rem;
+    color:white;
+}
+.question-3rd-div p{
+    color:white;
+    font-size: 1.5rem;
+    padding:0px 4.8rem 0px 1rem;
+}
+
+/* CONTACT STYLING  */
+
+/* contact-main div  */
+.contact-outer-main-div-center{
+    display: flex;
+    justify-content: center;
+}
+.contact-main-div{
+    margin-top: 1.9rem;
+    border: 2px solid #a9701c;
+    border-radius: 5px;
+    height: 25.8rem;
+    width: 90rem;
+}
+/* contact us heading  */
+.contact-main-div .heading{
+    color:white;
+    font-size: 2.9rem;
+    margin:1.1rem 0px 0px 1.9rem;
+}
+/* contact inner main div  */
+.contact-inner-main-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top:5px;
+}
+/* information div  */
+.info-div{
+    padding:3px 2rem;
+}
+/* contact inner main div all heading h1  */
+.contact-inner-main-div .info-div h1{
+    color:white;
+    font-size: 1.5rem;
+    margin-top:0.7rem;
+}
+/* contact inner main div paragraph (email,mumber,discription ) */
+.contact-inner-main-div .info-div p{
+    color:white;
+    font-size: 1.3rem;
+    margin-top:0.2rem;
+
+}
+/* contact input div */
+.contact-input-div form input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid grey;
+    width:100%;
+    height: 3.6rem;
+    outline: none;
+    color:white;
+    caret-color:grey;
+}
+.contact-input-div form input::placeholder{
+    color:white;
+    font-weight: 700;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.contact-input-div form button{
+    margin-top:1.5rem;
+    padding:1rem 1rem;
+    font-weight: 700;
+    background-color: transparent;
+    color:white;
+    border: 2px solid #a9701c;
+    border-radius: 1.6rem;
+}
+.contact-input-div form button:hover{
+    background-color: #3a280b;
+    transition: all 0.5s;
+}
+/* contact logo div  */
+.contact-logo-div{
+    display: flex;
+    justify-content: center;
+}
+.contact-logo-div .logos img{
+        width: 4rem;
+        border-radius: 3.4rem;
+        padding: 5px;
+}
+.contact-logo-div .logos a:not(:first-child){
+    margin-top: 4px;
+}
+
+.contact-logo-div .logos img:hover{
+    border: 1px solid white;
+    background-color: white;
+    transition: all 0.4s;
+
+
+}   
+.contact-logo-div .logos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:2px;
+}
+/* javascript dark mode  */
+.dark-mode{
+    background-color: black;
+    color:white;
+}
+.price-card-dark-mode::after{
+    color:black;
+    background-color: white;
+}
+.dark-all{
+    border: 2px solid white !important;
+
+}
+.button-mode{
+    border: 2px solid white !important;
+}
+.logo-dark{
+    background-color: white;
+    border-radius: 3.4rem;
+    pointer-events: none;
+    transition: all 0.4s;
+}
+
+/* Slush Cards styling  */
+.slush-card img{
+    height:33rem;
+    width: 22rem;
+    margin-left:3.2rem;
+    padding: 1rem;
+}
+.slush-cards{
+    display: flex;
+    margin-left: 7rem;
+}
+.slush-card{
+    position: relative;
+    border: 2px solid #a9701c;
+    height: 330px;
+    width: 280px;
+    box-shadow: 4px 4px 20px grey;
+    margin:50px;
+    overflow: hidden;
+    border-radius: 7px;
+}
+.slush-intro h1{
+    font-size: 35px;
+}
+.slush-intro p{
+    font-size: 1.6rem;
+    margin: 2px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.9s;
+}
+.slush-intro{
+    position: absolute;
+    background: rgb(27,27,27,.5);
+    position: relative;
+    padding:7px;
+    height: 160px;
+    width: 295px;
+    box-sizing: border-box;
+    color:white;
+    bottom:130px;
+}
+.slush-card:hover{
+    cursor: pointer;
+}
+.slush-card:hover .intro{
+    height: 40rem;
+}
+.slush-card:hover p{
+    visibility: visible;
+    opacity: 1;
+}
+.slush-card:hover img{
+    transform: scale(1.02);
+    transition: all 0.5s;
+}
